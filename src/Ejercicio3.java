@@ -16,6 +16,7 @@ public class Ejercicio3 {
         int tamano = Integer.parseInt(JOptionPane.showInputDialog("Ingrese tamaño deseado")) + 1;
         int[][] matriz = new int[tamano][tamano];
         puntoB(matriz, 0, 0);
+        puntoC(matriz);
     }
 
     /**
