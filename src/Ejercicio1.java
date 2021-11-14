@@ -52,10 +52,16 @@ public class Ejercicio1 {
         }
     }
 
+    /**
+     * Metodo Tabulación
+     */
     public static void puntoC() {
 
     }
 
+    /**
+     * Metodo Memorización
+     */
     public static void puntoD() {
 
     }

@@ -8,17 +8,15 @@
  * @author Santiago Steven Parra
  */
 public class Ejercicio4 {
+
     public static void main(String[] args) {
-        
+
     }
-    public static void operacion(){
-        
-    }
-    public static void puntoA(){
-        
-    }
-    public static void puntoB(){
-        
+
+    /**
+     * Metodo Tabulación
+     */
+    public static void puntoB() {
+
     }
 }
-

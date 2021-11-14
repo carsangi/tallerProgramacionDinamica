@@ -24,6 +24,9 @@ public class Ejercicio2 {
         puntoB(arreglo);
     }
 
+    /**
+     * Metodo Recursivo
+     */
     public static void puntoA(int arreglo[], int tamano, int primero, int segundo, int tercero) {
         if (arreglo.length < 3) {
 
@@ -37,9 +40,12 @@ public class Ejercicio2 {
         }
     }
 
+    /**
+     * Metodo Iterativo
+     */
     public static void puntoB(int[] arreglo) {
         for (int i = 3; i < arreglo.length; i++) {
-            arreglo[i] = arreglo[i - 1] + arreglo[i - 2] + arreglo[i-3];
+            arreglo[i] = arreglo[i - 1] + arreglo[i - 2] + arreglo[i - 3];
 
         }
         for (int i = 0; i < arreglo.length; i++) {
@@ -48,10 +54,16 @@ public class Ejercicio2 {
 
     }
 
+    /**
+     * Metodo Tabulación
+     */
     public static void puntoC() {
 
     }
 
+    /**
+     * Metodo Memorización
+     */
     public static void puntoD() {
 
     }

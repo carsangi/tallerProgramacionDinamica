@@ -18,6 +18,9 @@ public class Ejercicio3 {
         puntoB(matriz);
     }
 
+    /**
+     * Metodo Recursivo
+     */
     public static void puntoB(int[] arreglo) {
         int columnas = arreglo.length;
         for (int n = 0; n < columnas; n++) {
@@ -31,6 +34,9 @@ public class Ejercicio3 {
         }
     }
 
+    /**
+     * Metodo Tabulación
+     */
     public static void puntoC(int[] arreglo) {
         int columnas = arreglo.length;
         for (int n = 0; n < columnas; n++) {

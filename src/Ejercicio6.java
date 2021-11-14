@@ -11,12 +11,9 @@ public class Ejercicio6 {
     public static void main(String[] args) {
         
     }
-    public static void operacion(){
-        
-    }
-    public static void puntoA(){
-        
-    }
+    /**
+     * Metodo Recurencia
+     */
     public static void puntoB(){
         
     }

@@ -14,13 +14,22 @@ public class Ejercicio5 {
     public static void operacion(){
         
     }
-    public static void puntoA(){
+    /**
+     * Metodo Recursivo
+     */
+    public static void puntoA_Recursivo(){
         
     }
+    /**
+     * Metodo Iterativo
+     */
+    public static void puntoA_Iterativo(){
+        
+    }
+    /**
+     * Metodo Tabulación
+     */
     public static void puntoB(){
-        
-    }
-    public static void puntoC(){
         
     }
 }
