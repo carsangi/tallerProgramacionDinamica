@@ -1,31 +1,32 @@
 
-
 import javax.swing.JOptionPane;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
 /**
  * @author Carlos Andres Sanchez
  * @author Santiago Steven Parra
  */
 public class Ejercicio5 {
+
     public static void main(String[] args) {
-          int tamano = Integer.parseInt(JOptionPane.showInputDialog("Ingrese tamaño deseado")) + 1;
+        int tamano = Integer.parseInt(JOptionPane.showInputDialog("Ingrese tamaño deseado")) + 1;
         int[][] matriz = new int[tamano][tamano];
         puntoA_Recursivo(matriz, 0, 0);
 //        puntoA_Iterativo(matriz);
 //        puntoB(matriz);
     }
-    public static void operacion(){
-        
+
+    public static void operacion() {
+
     }
+
     /**
      * Metodo Recursivo
      */
-    public static void puntoA_Recursivo(int[][] matriz, int i, int j){
+    public static void puntoA_Recursivo(int[][] matriz, int i, int j) {
         int filas = matriz.length;
         if (j <= i) {
             if (i < filas && j == 0) {
@@ -35,7 +36,7 @@ public class Ejercicio5 {
                 matriz[i][j] = 2;
                 System.out.format("%4d", matriz[i][j]);
             } else {
-                matriz[i][j] = matriz[i][j - 1] + matriz[i - 1][j-1] + matriz[i-1][j];
+                matriz[i][j] = matriz[i][j - 1] + matriz[i - 1][j - 1] + matriz[i - 1][j];
                 System.out.format("%4d", matriz[i][j]);
             }
             puntoA_Recursivo(matriz, i, j + 1);
@@ -46,11 +47,12 @@ public class Ejercicio5 {
             }
         }
     }
+
     /**
      * Metodo Iterativo
      */
-    public static void puntoA_Iterativo(int[][] matriz){
-         int filas = matriz.length;
+    public static void puntoA_Iterativo(int[][] matriz) {
+        int filas = matriz.length;
         for (int i = 0; i < filas; i++) {
             System.out.format("%" + (filas - i) * 2 + "s", "");//formato
             for (int j = 0; j <= i; j++) {
@@ -61,18 +63,19 @@ public class Ejercicio5 {
                     matriz[i][j] = 2;
                     System.out.format("%4d", matriz[i][j]);
                 } else {
-                    matriz[i][j] = matriz[i][j - 1] + matriz[i - 1][j-1] + matriz[i-1][j];
+                    matriz[i][j] = matriz[i][j - 1] + matriz[i - 1][j - 1] + matriz[i - 1][j];
                     System.out.format("%4d", matriz[i][j]);
                 }
             }
             System.out.println();
         }
     }
+
     /**
      * Metodo Tabulación
      */
-    public static void puntoB(int[][] matriz){
-         int filas = matriz.length;
+    public static void puntoB(int[][] matriz) {
+        int filas = matriz.length;
         for (int i = 0; i < filas; i++) {
             System.out.format("%" + (filas - i) * 2 + "s", "");//formato
             for (int j = 0; j <= i; j++) {
@@ -83,7 +86,7 @@ public class Ejercicio5 {
                     matriz[i][j] = 2;
                     System.out.format("%4d", matriz[i][j]);
                 } else {
-                    matriz[i][j] = matriz[i][j - 1] + matriz[i - 1][j-1] + matriz[i-1][j];
+                    matriz[i][j] = matriz[i][j - 1] + matriz[i - 1][j - 1] + matriz[i - 1][j];
                     System.out.format("%4d", matriz[i][j]);
                 }
             }

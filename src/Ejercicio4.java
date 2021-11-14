@@ -29,11 +29,11 @@ public class Ejercicio4 {
                     matriz[i][j] = 1;
                     System.out.format("%4d", matriz[i][j]);
                 } else if (i == j) {
-                    
-                    matriz[i][j] = (int) Math.pow((double)j,(double)j);
+
+                    matriz[i][j] = (int) Math.pow((double) j, (double) j);
                     System.out.format("%4d", matriz[i][j]);
                 } else {
-                    matriz[i][j] = matriz[i-1][j]*3 + matriz[i - 1][j-1]*2;
+                    matriz[i][j] = matriz[i - 1][j] * 3 + matriz[i - 1][j - 1] * 2;
                     System.out.format("%4d", matriz[i][j]);
                 }
             }

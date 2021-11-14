@@ -51,20 +51,34 @@ public class Ejercicio2 {
         for (int i = 0; i < arreglo.length; i++) {
             System.out.println("Arreglo [" + (i) + "] = : " + arreglo[i]);
         }
-
     }
 
     /**
      * Metodo Tabulación
      */
-    public static void puntoC() {
+    public static void puntoC(int[] arreglo) {
+        for (int i = 3; i < arreglo.length; i++) {
+            arreglo[i] = arreglo[i - 1] + arreglo[i - 2] + arreglo[i - 3];
 
+        }
+        for (int i = 0; i < arreglo.length; i++) {
+            System.out.println("Arreglo [" + (i) + "] = : " + arreglo[i]);
+        }
     }
 
     /**
      * Metodo Memorización
      */
-    public static void puntoD() {
+    public static void puntoD(int arreglo[], int tamano, int primero, int segundo, int tercero) {
+        if (arreglo.length < 3) {
 
+        } else {
+            if (tercero < tamano - 1) {
+                arreglo[tercero + 1] = arreglo[primero] + arreglo[segundo] + arreglo[tercero];
+                puntoA(arreglo, tamano, primero + 1, segundo + 1, tercero + 1);
+                System.out.println("Arreglo [" + (tercero + 1) + "] = : " + arreglo[tercero + 1]);
+
+            }
+        }
     }
 }
